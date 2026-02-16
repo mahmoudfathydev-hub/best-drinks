@@ -4,10 +4,12 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Phone, Menu, X } from "lucide-react";
+import { useTheme } from "@/context/ThemeContext";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { backgroundColor } = useTheme();
 
   const links = [
     { name: "Home", href: "/" },
@@ -37,14 +39,15 @@ function Navbar() {
     <nav
       className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? "backdrop-blur-sm bg-opacity-80" : "bg-transparent"} ${isScrolled ? "shadow-md" : ""}`}
       style={{
-        backgroundColor: isScrolled ? "rgba(198, 40, 40, 0.8)" : "rgba(198, 40, 40, 0.8)",
+        backgroundColor: backgroundColor,
+        transition: "background-color 300ms ease",
       }}
     >
       <div className="container p-2 max-w-7xl mx-auto flex justify-between items-center font-medium px-4">
-        <div className="logo p-2 rounded-full w-[60px] h-[60px] md:w-[80px] md:h-[80px] transition-all duration-300">
+        <div className="logo p-2 rounded-full w-15 h-15 md:w-20 md:h-20 transition-all duration-300">
           <Link href="/" onClick={handleLinkClick}>
             <Image
-              src="/images/logo.png"
+              src="/images/Newlogo.png"
               alt="logo"
               width={92}
               height={92}
@@ -88,9 +91,10 @@ function Navbar() {
         </div>
       </div>
       <div
-        className={`md:hidden bg-white w-full overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`md:hidden w-full overflow-hidden transition-all duration-300 ease-in-out ${
           isOpen ? "max-h-96 py-4" : "max-h-0 py-0"
         }`}
+        style={{ backgroundColor }}
       >
         <div className="container mx-auto px-4 flex flex-col items-center gap-6">
           {links.map((link) => (

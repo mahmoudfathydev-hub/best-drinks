@@ -1,13 +1,79 @@
 [
   {
-  "flavor": "Red Apple",
-  "Can":"public/images/appleCan.png",
-  "images": [
-    "public/images/apple1.png",
-    "public/images/apple2.png",
-    "public/images/apple3.png",
-    "public/images/apple4.png"
-  ],
-  "backgroundColor": "#C62828"
-}
+    "flavor": "Red Apple",
+    "Can": "public/images/appleCan.png",
+    "images": [
+      "public/images/apple1.png",
+      "public/images/apple2.png",
+      "public/images/apple3.png",
+      "public/images/apple4.png"
+    ],
+    "backgroundColor": "#C62828"
+  },
+  {
+    "flavor": "Lemon",
+    "Can": "public/images/lemonCan.png",
+    "images": [
+      "public/images/lemon1.png",
+      "public/images/lemon2.png",
+      "public/images/lemon3.png",
+      "public/images/lemon4.png"
+    ],
+    "backgroundColor": "#FBC02D"
+  },
+  {
+    "flavor": "Chocolate",
+    "Can": "public/images/chocolateCan.png",
+    "images": [
+      "public/images/chocolate1.png",
+      "public/images/chocolate2.png",
+      "public/images/chocolate3.png",
+      "public/images/chocolate4.png"
+    ],
+    "backgroundColor": "#4E342E"
+  },
+  {
+    "flavor": "Pomegranate",
+    "Can": "public/images/pomegranateCan.png",
+    "images": [
+      "public/images/pomegranate1.png",
+      "public/images/pomegranate2.png",
+      "public/images/pomegranate3.png",
+      "public/images/pomegranate4.png"
+    ],
+    "backgroundColor": "#8E0038"
+  },
+  {
+    "flavor": "Orange",
+    "Can": "public/images/orangeCan.png",
+    "images": [
+      "public/images/orange1.png",
+      "public/images/orange2.png",
+      "public/images/orange3.png",
+      "public/images/orange4.png"
+    ],
+    "backgroundColor": "#FB8C00"
+  },
+  {
+    "flavor": "Cola",
+    "Can": "public/images/colaCan.png",
+    "images": [
+      "public/images/colacircle.png",
+      "public/images/cola2.png",
+      "public/images/cola3.png",
+      "public/images/cola4.png"
+    ],
+    "backgroundColor": "#3E2723"
+  },
+  {
+    "flavor": "Cherry",
+    "Can": "public/images/cherryCan.png",
+    "images": [
+      "public/images/cherry1.png",
+      "public/images/cherry2.png",
+      "public/images/cherry3.png",
+      "public/images/cherry4.png"
+    ],
+    "backgroundColor": "#AD1457"
+  }
 ]
