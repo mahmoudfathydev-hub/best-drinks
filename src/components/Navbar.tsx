@@ -10,10 +10,10 @@ function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const links = [
-    { name: "الرئيسية", href: "/" },
-    { name: "من نحن", href: "/about" },
-    { name: "منتجاتنا", href: "/products" },
-    { name: "اتصل بنا", href: "/contact" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Products", href: "/products" },
+    { name: "Contact", href: "/contact" },
   ];
 
   useEffect(() => {
@@ -35,10 +35,13 @@ function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-white"}`}
+      className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? "backdrop-blur-sm bg-opacity-80" : "bg-transparent"} ${isScrolled ? "shadow-md" : ""}`}
+      style={{
+        backgroundColor: isScrolled ? "rgba(198, 40, 40, 0.8)" : "rgba(198, 40, 40, 0.8)",
+      }}
     >
-      <div className="container p-2 max-w-325 mx-auto flex justify-between items-center font-medium">
-        <div className="logo border border-blue-600 p-2 rounded-full w-[70px] h-[70px] md:w-[92px] md:h-[92px] transition-all duration-300">
+      <div className="container p-2 max-w-7xl mx-auto flex justify-between items-center font-medium px-4">
+        <div className="logo p-2 rounded-full w-[60px] h-[60px] md:w-[80px] md:h-[80px] transition-all duration-300">
           <Link href="/" onClick={handleLinkClick}>
             <Image
               src="/images/logo.png"
@@ -51,12 +54,12 @@ function Navbar() {
           </Link>
         </div>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6">
           {links.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="hover:text-blue-600 transition-colors"
+              className="text-white hover:text-gray-200 transition-colors text-base font-medium"
               onClick={handleLinkClick}
             >
               {link.name}
@@ -67,10 +70,10 @@ function Navbar() {
         <div className="hidden md:block">
           <Link
             href="/contact"
-            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition-colors"
+            className="flex items-center gap-2 bg-black hover:bg-gray-800 text-white font-semibold px-4 py-2 rounded-lg transition-colors"
             onClick={handleLinkClick}
           >
-            اتصل بنا
+            Call Us
             <Phone size={20} />
           </Link>
         </div>

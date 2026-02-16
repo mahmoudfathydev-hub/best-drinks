@@ -1,0 +1,54 @@
+Build a responsive Hero Slider section for a juice product website using React.
+
+GOAL:
+Create a dynamic, animated hero section that displays different juice flavors with interactive navigation.
+
+LAYOUT STRUCTURE:
+- The hero section contains 3 horizontal columns using flex layout.
+- Layout structure:
+  | Column 1 | Column 2 | Column 3 |
+- The section must be fully responsive.
+
+COLUMN 1 (Left):
+- Contains two stacked images (flex-direction: column).
+- Images animate from bottom to top.
+- Use AOS library.
+- Animation type: fade-up.
+
+COLUMN 2 (Center / Main Product):
+- Contains the main product can image centered.
+- Below the can image:
+  - Left arrow button
+  - "Shop Now" button
+  - Right arrow button
+- Entire column animates with opacity transition from 0 to 1.
+- Use AOS animation type: fade-in.
+
+COLUMN 3 (Right):
+- Same structure as Column 1.
+- Two stacked images (vertical).
+- Same animation: fade-up using AOS.
+
+BACKGROUND BEHAVIOR:
+- Hero section background color changes dynamically based on selected flavor.
+- Background color comes from flavor.backgroundColor.
+- Transition between colors must be smooth.
+
+BEHIND FLAVOR TEXT:
+- Large flavor name text positioned absolutely behind the 3 columns.
+- Lower z-index than columns.
+- When right arrow is clicked → text slides from right to left.
+- When left arrow is clicked → text slides from left to right.
+- Use CSS transform (translateX) with smooth transition.
+
+SLIDER LOGIC:
+When an arrow button is clicked:
+1. Update selected flavor state.
+2. Update:
+   - Background color
+   - Main can image
+   - Side images
+   - Behind flavor text
+3. Re-trigger animations properly.
+
+Ensure clean component structure and proper state management.
