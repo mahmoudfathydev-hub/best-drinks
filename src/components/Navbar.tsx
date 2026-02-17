@@ -73,7 +73,7 @@ function Navbar() {
         <div className="hidden md:block">
           <Link
             href="/contact"
-            className="flex items-center gap-2 bg-black hover:bg-gray-800 text-white font-semibold px-4 py-2 rounded-lg transition-colors"
+            className="flex items-center gap-2 bg-transparent text-white font-semibold px-4 py-2 rounded-lg transition-colors"
             onClick={handleLinkClick}
           >
             Call Us
