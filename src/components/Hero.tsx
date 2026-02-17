@@ -117,7 +117,7 @@ function Hero() {
 
         <div className="container mx-auto px-4 z-10 w-full h-full">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-center h-full">
-            <div className="md:col-span-1 flex flex-col gap-4 md:gap-8">
+            <div className="hidden md:flex md:col-span-1 flex-col gap-4 md:gap-8">
               <div
                 className="w-full"
                 ref={(el) => {
@@ -155,14 +155,14 @@ function Hero() {
                       imagesRef.current[2] = el;
                       productImageRef.current = el;
                     }}
-                    className="relative w-auto h-auto z-50 will-change-transform"
+                    className="relative w-60 md:w-auto h-auto z-50 will-change-transform"
                   >
                     <Image
                       src={getImagePath(currentFlavor.Can)}
                       alt={`${currentFlavor.flavor} drink`}
                       width={600}
                       height={900}
-                      className="mx-auto w-auto object-contain"
+                      className="mx-auto w-full md:w-auto h-auto object-contain"
                       priority
                     />
                   </div>
@@ -200,7 +200,7 @@ function Hero() {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-1 flex flex-col gap-4 md:gap-8 mt-4 md:mt-0">
+            <div className="hidden md:flex md:col-span-1 flex-col gap-4 md:gap-8 mt-4 md:mt-0">
               <div
                 className="w-full"
                 ref={(el) => {
