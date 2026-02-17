@@ -155,7 +155,7 @@ function Hero() {
                       imagesRef.current[2] = el;
                       productImageRef.current = el;
                     }}
-                    className="relative w-60 md:w-auto h-auto z-50 will-change-transform"
+                    className="relative w-60 md:w-auto h-auto min-h-[300px] md:min-h-[500px] aspect-[2/3] z-50 will-change-transform"
                   >
                     <Image
                       src={getImagePath(currentFlavor.Can)}
@@ -171,7 +171,7 @@ function Hero() {
                   className="flex items-center justify-center gap-4 sm:gap-6 
                 mt-6 md:mt-0 
                 relative md:absolute 
-                md:bottom-0 md:left-0 md:right-0"
+                md:bottom-0 md:left-0 md:right-0 z-[60]"
                 >
                   <button
                     onClick={() => changeFlavor("prev")}
