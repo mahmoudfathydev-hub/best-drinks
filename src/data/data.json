@@ -8,7 +8,8 @@
       "public/images/apple3.png",
       "public/images/apple4.png"
     ],
-    "backgroundColor": "#C62828"
+    "backgroundColor": "#C62828",
+    "description": "A refreshing red apple drink with a perfectly balanced sweet and tangy taste that delivers a crisp, energizing experience in every sip."
   },
   {
     "flavor": "Lemon",
@@ -19,7 +20,8 @@
       "public/images/lemon3.png",
       "public/images/lemon4.png"
     ],
-    "backgroundColor": "#FBC02D"
+    "backgroundColor": "#FBC02D",
+    "description": "A zesty lemon flavor packed with citrus freshness, offering a sharp, cooling taste that instantly awakens your senses."
   },
   {
     "flavor": "Chocolate",
@@ -30,7 +32,8 @@
       "public/images/chocolate3.png",
       "public/images/chocolate4.png"
     ],
-    "backgroundColor": "#4E342E"
+    "backgroundColor": "#4E342E",
+    "description": "A rich and smooth chocolate drink with a deep cocoa flavor, crafted for those who enjoy a bold and indulgent taste."
   },
   {
     "flavor": "Pomegranate",
@@ -41,7 +44,8 @@
       "public/images/pomegranate3.png",
       "public/images/pomegranate4.png"
     ],
-    "backgroundColor": "#8E0038"
+    "backgroundColor": "#8E0038",
+    "description": "A vibrant pomegranate blend combining sweetness and tartness, delivering a bold fruity flavor full of character."
   },
   {
     "flavor": "Orange",
@@ -52,7 +56,8 @@
       "public/images/orange3.png",
       "public/images/orange4.png"
     ],
-    "backgroundColor": "#FB8C00"
+    "backgroundColor": "#FB8C00",
+    "description": "A classic orange drink bursting with juicy citrus notes, offering a refreshing and uplifting taste anytime."
   },
   {
     "flavor": "Cola",
@@ -63,7 +68,8 @@
       "public/images/cola3.png",
       "public/images/cola4.png"
     ],
-    "backgroundColor": "#3E2723"
+    "backgroundColor": "#3E2723",
+    "description": "A bold and fizzy cola flavor with a smooth finish, delivering the timeless taste everyone loves."
   },
   {
     "flavor": "Cherry",
@@ -74,6 +80,7 @@
       "public/images/cherry3.png",
       "public/images/cherry4.png"
     ],
-    "backgroundColor": "#AD1457"
+    "backgroundColor": "#AD1457",
+    "description": "A sweet and juicy cherry flavor with a rich fruity profile, creating a fun and refreshing drinking experience."
   }
 ]
